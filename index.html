@@ -181,7 +181,7 @@
     </div>
 </section>
 
-<form id="contacto" class="contacto">
+<form id="contacto" class="contacto" onsubmit="enviarMail()">
     <div class="row">
         <div class="col-12">
             <h3 class="h3-small intro title-contact">Contacto</h3>
@@ -192,15 +192,15 @@
         </div>
 
         <div class="col-12">
-            <input type="text" name="name" data-name="Name" placeholder="Su nombre" maxlength="256" required="" class="input">
+            <input type="text" name="name" data-name="Name" placeholder="Su nombre" maxlength="256" required="" class="input" id="su-nombre">
         </div>
 
         <div class="col-12">
-            <input type="email" name="email" data-name="Email" placeholder="Su mail de contacto" maxlength="256" required="" class="input">
+            <input type="email" name="email" data-name="Email" placeholder="Su mail de contacto" maxlength="256" required="" id="su-email" class="input">
         </div>
 
         <div class="col-12">
-            <textarea data-name="Message" maxlength="5000" required="" name="message" placeholder="Su mensaje..." class="form-field area w-input"></textarea>
+            <textarea data-name="Message" maxlength="5000" required="" name="message" id="su-mensaje" placeholder="Su mensaje..." class="form-field area w-input"></textarea>
         </div>
 
         <div class="col-12">
@@ -209,19 +209,10 @@
     </div>
 
     <footer>
-
         <div class="row">
             <div class="col-12">
                 <a href="#top" class="menu-button go-to-top w-inline-block"><img src="https://uploads-ssl.webflow.com/57ec3f381d6b09d95c5e74cb/57ec3f381d6b09d95c5e74e1_Icon-arrowtop.png" alt=""></a>
             </div>
-
-            <div class="footer">
-                <div class="footer-links col-12 justify-content-center">
-                    <a href="https://github.com/valenap" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:valentina.andrada@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
     </footer>
 
 </form>
@@ -238,7 +229,19 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous">
 </script>
+<script type="text/javascript">
+    function enviarMail() {
+        const textoNombre = document.getElementById("su-nombre").value;
+        const asunto = "Solicitud de contacto - " + textoNombre;
 
+        const textoMail = document.getElementById("su-email").value;
+
+        const mensaje = document.getElementById("su-mensaje").value;
+
+        const mailto = "mailto:valentina.andrada@gmail.com?Subject=" + asunto +"&body=" + textoMail + "     " + mensaje;
+    window.open(mailto);
+    }
+</script>
 </body>
 
 </html>
