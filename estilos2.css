@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    color: #343353;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #353352;
+}
+
+.containerr {
+    background-color: #f9f9ff;
+    padding: 60px 20px;
+    margin: auto;
+}
+
+.title-content {
+    font-size: 38px;
+    color: #343353;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* NAVBAR */
+
+aside {
+    padding-top: 40px;
+    padding-left: 50px;
+    display: block;
+}
+
+h1 {
+    color: #f9f9ff;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+nav {
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #f9f9ff;
+    margin: 8px 0;
+    height: 32px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #ffd15c;
+}
+
+i {
+    margin-right: 10px;
+    color: #ffd15c;
+    text-decoration: none;
+    width: 20px;
+}
+
+/* CONTENIDO */
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* BANNER */
+
+.full-container {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #353352;
+}
+
+.banner-container-main {
+    z-index: 1;
+}
+
+.banner-container-image {
+    width: 108px;
+    height: 108px;
+    border-radius: 100px;
+    border: 2px solid #f4f4f4;
+    margin-bottom: 24px;
+}
+
+.banner-container-name h2 {
+    font-size: 38px;
+    margin-top: 31.540px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.banner-container-redes a i {
+    color: #f4f4f4;
+    font-size: 25px;
+    margin-top: 16px;
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.banner-container-redes a i:hover {
+    color: #ffd15c;
+    transform: scale(1.2);
+}
+
+.banner-container-btn-contactame {
+    margin-top: 24px;
+    color: #f9f9ff;
+    background-color: #ff4c60;
+    border: none;
+    width: 128px;
+    height: 42px;
+    border-radius: 21px;
+    transition: 0.3s all;
+}
+
+.banner-container-btn-contactame a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner-container-btn-contactame:hover {
+    background-color: #f34156;
+    transform: translateY(-3px);
+}
+
+.banner-container-scroll {
+    color: #f4f4f4;
+    position: absolute;
+    bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all ;
+}
+
+.banner-container-scroll:hover {
+    text-decoration: none;
+    color: #ffffff;
+    bottom: 36px;
+}
+
+.banner-container-scroll i {
+    width: 15px;
+    margin-top: 10px;
+    color: #f4f4f4;
+}
+
+.banner-container-scroll i:hover {
+    color: #ffffff;
+}
+
+/* FIN DEL BANNER */
+
+/* SOBRE MI */
+
+.sobremi-container-main {
+    display: flex;
+    align-items: end;
+}
+
+.title-content h3 {
+    margin: 38px 0;
+}
+
+.sobremi-container-image {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.sobremi-container-card-description {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    color: #5e5c7f;
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+/* CARDS */
+
+.cards {
+    margin: 3px 10px 3px 10px;
+}
+
+.card-trip {
+    overflow: hidden;
+    border-radius: 20px;
+    background: 0;
+    margin: 5px 10px 50px 10px;
+    box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+    transition: 0.5s all;
+}
+
+.card-trip:hover{
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+}
+
+.card-trip img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-trip h2 {
+    color: #343353;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.card-trip p {
+    color: #5e5c7f;
+    font-size: 12px;
+    text-align: center;
+    opacity: .7;
+    margin: 0;
+}
+
+.card-trip .card-trip-infos {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* CONTACTO */
+
+.contactame-container-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactame-container-text {
+    width: 30%;
+}
+
+.contactame-container-text-title {
+    font-size: 23px;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.contactme-container-form {
+    width: 60%;
+}
+.contactame-container-form-name {
+    box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 65px;
+    width: 100%;
+    margin: 5px 0;
+    padding-top: 20px;
+}
+
+.text-area {
+    height: 150px;
+    padding-top: 19px;
+}
