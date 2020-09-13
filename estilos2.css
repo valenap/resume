@@ -265,6 +265,11 @@ i {
     width: 30%;
 }
 
+.texto-chico-contactame {
+    font-weight: lighter;
+    margin: 16px 0;
+}
+
 .contactame-container-text-title {
     font-size: 23px;
     margin: 0 0 10px;
@@ -274,6 +279,7 @@ i {
 .contactme-container-form {
     width: 60%;
 }
+
 .contactame-container-form-name {
     box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
     background-color: white;
@@ -281,7 +287,7 @@ i {
     border: none;
     height: 60px;
     width: 100%;
-    margin: 0;
+    margin: 0 20px 0 0;
     padding: 0 20px;
     box-sizing: border-box;
 }
